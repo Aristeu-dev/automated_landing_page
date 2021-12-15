@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../../components/organisms/header";
 import { Container } from "./styles";
-import home from "../../assets/home.jpg";
-
+import MainSection from "../../components/organisms/mainSection";
 const Home: React.FC = () => {
+
   return (
     <Container>
       <Header></Header>
-      <img src={home} alt="first-section-img" className="first-section-img" />
+      <MainSection></MainSection>
     </Container>
   );
 };

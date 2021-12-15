@@ -1,6 +1,5 @@
 import styled from "styled-components";
 export const Container = styled.ul`
-  background: pink;
   width: 400px;
   display: flex;
   justify-content: space-evenly;

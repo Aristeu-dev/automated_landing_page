@@ -25,7 +25,6 @@ export default createGlobalStyle`
     }
     h1 {
         font-weight: 900;
-
     }
     button {
         cursor: pointer;
