@@ -1,6 +1,9 @@
 import styled from "styled-components";
 export const Container = styled.nav`
   /* background: red; */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
   height: 80px;
   padding-left: 10%;
   padding-right: 10%;

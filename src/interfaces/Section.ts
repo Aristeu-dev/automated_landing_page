@@ -12,3 +12,11 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 export interface IButton extends ButtonProps {
   template: "main-section" | "secundary-section";
 }
+export interface IMainSection {
+  title: string;
+  subTitle: string;
+  textButton: string;
+  img: string;
+}
+
+export interface ISecundarySection extends IMainSection {}

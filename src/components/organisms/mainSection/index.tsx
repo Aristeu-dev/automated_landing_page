@@ -3,17 +3,24 @@ import { Container } from "./styles";
 import home from "../../../assets/home.jpg";
 import Topic from "../../atoms/topic";
 import Button from "../../atoms/button";
-const MainSection: React.FC = () => {
+import { IMainSection } from "../../../interfaces/Section";
+
+const MainSection: React.FC<IMainSection> = ({
+  title,
+  subTitle,
+  textButton,
+  img,
+}: IMainSection) => {
   return (
     <Container>
       <Topic template="main-section" type="title">
-        Uma revolução quando os assuntos são finanças pessoais
+        {title}
       </Topic>
       <Topic template="main-section" type="subtitle">
-        Uma revolução quando os assuntos são finanças pessoais
+        {subTitle}
       </Topic>
-      <Button template="main-section">Ler mais</Button>
-      <img src={home} alt="first-section-img" className="first-section-img" />
+      <Button template="main-section">{textButton}</Button>
+      <img src={img} alt="first-section-img" className="first-section-img" />
     </Container>
   );
 };

@@ -23,8 +23,38 @@ export const Container = styled.text`
       text-align: center;
     }
   }
+  &.secundary-section {
+    &.title {
+      color: #252b42;
+      font-weight: 400;
+      font-size: 40px;
+    }
+    &.subtitle {
+      font-weight: 400;
+      font-size: 28px;
+      color: #374754;
+    }
+  }
 
+  /* @media (max-width: 1200px) {
+    &.secundary-section {
+      &.title {
+        font-size: 40px;
+      }
+      &.subtitle {
+        font-size: 20px;
+      }
+    }
+  } */
   @media (max-width: 800px) {
+    &.secundary-section {
+      &.title {
+        font-size: 30px;
+      }
+      &.subtitle {
+        font-size: 20px;
+      }
+    }
     &.main-section {
       &.title {
         font-size: 40px;
@@ -44,7 +74,6 @@ export const Container = styled.text`
         font-weight: 600;
       }
       &.subtitle {
-        font-size: 15px;
         width: 400px;
       }
     }
