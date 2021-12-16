@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styles";
 import Ul from "../../molecules/ul";
-import { listHeader } from "../../../Data/moker";
+import { listHeader } from "../../../Data/date";
 import logo from "../../../assets/logo.svg";
 import { GrTwitter } from "react-icons/gr";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
